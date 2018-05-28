@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">AnupomRoy_COMP304_Assignment2</string>
+    <string name="app_name">Tech Shopping City</string>
+    <string name="mainImageView">mainImageView</string>
+    <string name="mainHeading"> Welcome in the shopping  </string>
 </resources>
