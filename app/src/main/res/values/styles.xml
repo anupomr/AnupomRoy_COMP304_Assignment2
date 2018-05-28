@@ -12,5 +12,7 @@
         <item name="android:textSize">10pt</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+<style name="screenStyle">
+    <item name="android:padding">20dp</item>
+</style>
 </resources>

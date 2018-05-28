@@ -17,8 +17,8 @@
     </item>
 
     <item
-        android:id="@+id/sumsung"
-        android:title="@string/sumsung">
+        android:id="@+id/samsung"
+        android:title="@string/samsung">
 
     </item>
     <item

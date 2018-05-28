@@ -6,6 +6,7 @@ package com.example.anupo.anupomroy_comp304_assignment2;
  * Professor:Vinayagathas Vaithilingam
  * Lab:     LabAssignment 2
  * */
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,10 +40,14 @@ public class SecondActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
-            case R.id.iphone:
-                Toast.makeText(this,"Apple",Toast.LENGTH_LONG).show();
+            case R.id.desktop:
+                Toast.makeText(this,"Desktop is selected",Toast.LENGTH_LONG).show();
                 break;
+            case R.id.iphone:
 
+                Intent intent=new Intent(SecondActivity.this,iPhoneActivity.class);
+                startActivity(intent);
+                break;
 
         }
         return true;

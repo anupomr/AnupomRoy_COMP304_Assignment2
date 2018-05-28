@@ -3,9 +3,19 @@
     <string name="mainImageView">mainImageView</string>
     <string name="mainHeading"> Welcome in shopping city </string>
     <string name="iphone">Iphone</string>
-    <string name="sumsung">Sumsung</string>
+    <string name="samsung">Samsung Phone</string>
     <string name="laptops">Laptops</string>
     <string name="desktop">Desktop</string>
     <string name="tv">Television</string>
     <string name="tablets">Tablets</string>
+
+    <string name="iPhone7">iPhone 7</string>
+    <string name="iPhone8">iPhone 8</string>
+    <string name="SiCase"> Silicone Case</string>
+    <string name="LeCase"> Leather Case</string>
+    <string name="pad">Charging Pad</string>
+    <string name="earPhones"> BeatsX Earphones</string>
+    <string name="headPhones"> Wireless Headphones</string>
+    <string name="airPods"> Airpods</string>
+    <string name="btnText">Check Out</string>
 </resources>
