@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Tech Shopping City</string>
     <string name="mainImageView">mainImageView</string>
-    <string name="mainHeading"> Welcome in the shopping  </string>
+    <string name="mainHeading"> Welcome in shopping city </string>
+    <string name="iphone">Iphone</string>
+    <string name="sumsung">Sumsung</string>
+    <string name="laptops">Laptops</string>
+    <string name="desktop">Desktop</string>
+    <string name="tv">Television</string>
+    <string name="tablets">Tablets</string>
 </resources>
