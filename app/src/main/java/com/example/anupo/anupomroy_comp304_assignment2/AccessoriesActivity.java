@@ -6,19 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LaptopActivity extends AppCompatActivity {
+public class AccessoriesActivity extends AppCompatActivity {
 
     Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_laptop);
+        setContentView(R.layout.activity_accessories);
 
         btnBack=(Button)findViewById(R.id.btnBack);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LaptopActivity.this,SecondActivity.class));
+                startActivity(new Intent(AccessoriesActivity.this,SecondActivity.class));
             }
         });
     }

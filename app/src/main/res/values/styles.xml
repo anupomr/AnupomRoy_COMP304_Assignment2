@@ -15,4 +15,10 @@
 <style name="screenStyle">
     <item name="android:padding">20dp</item>
 </style>
+
+    <style name="btn_text">
+        <item name="android:textSize">20dp</item>
+
+        <item name="android:textColor">@color/btn_color</item>
+    </style>
 </resources>

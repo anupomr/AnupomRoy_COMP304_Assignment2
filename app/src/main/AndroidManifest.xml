@@ -20,7 +20,10 @@
         <activity android:name=".iPhoneActivity" />
         <activity android:name=".CheckOutActivity" />
         <activity android:name=".CellPhoneActivity" />
-        <activity android:name=".LaptopActivity"></activity>
+        <activity android:name=".LaptopActivity" />
+        <activity android:name=".TelevisionsActivity" />
+        <activity android:name=".PrintersActivity" />
+        <activity android:name=".AccessoriesActivity"></activity>
     </application>
 
 </manifest>

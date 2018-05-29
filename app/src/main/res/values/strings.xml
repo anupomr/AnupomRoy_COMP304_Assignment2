@@ -20,4 +20,9 @@
     <string name="airPods"> Airpods</string>
 
     <string name="btnText">Check Out</string>
+
+    <!--String for Cellphone Activity-->
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
+    <!--String for Cellphone Activity-->
 </resources>

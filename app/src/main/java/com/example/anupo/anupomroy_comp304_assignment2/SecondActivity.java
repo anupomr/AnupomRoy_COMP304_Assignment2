@@ -41,18 +41,24 @@ public class SecondActivity extends AppCompatActivity
         switch (item.getItemId())
         {
             case R.id.phone:
-                Toast.makeText(this,"Desktop is selected",Toast.LENGTH_LONG).show();
+                Intent phoneIntent=new Intent(SecondActivity.this,CellPhoneActivity.class);
+                startActivity(phoneIntent);
                 break;
             case R.id.laptop:
-
-                Intent intent=new Intent(SecondActivity.this,iPhoneActivity.class);
-                startActivity(intent);
+                Intent laptopIntent=new Intent(SecondActivity.this,LaptopActivity.class);
+                startActivity(laptopIntent);
                 break;
             case R.id.tv:
+                Intent tvIntent=new Intent(SecondActivity.this,TelevisionsActivity.class);
+                startActivity(tvIntent);
                 break;
             case R.id.printer:
+                Intent printerIntent=new Intent(SecondActivity.this,PrintersActivity.class);
+                startActivity(printerIntent);
                 break;
             case R.id.accessories:
+                Intent accessoriesIntent=new Intent(SecondActivity.this,AccessoriesActivity.class);
+                startActivity(accessoriesIntent);
                 break;
 
         }
