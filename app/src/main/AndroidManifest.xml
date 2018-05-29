@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".iPhoneActivity" />
-        <activity android:name=".CheckOutActivity"></activity>
+        <activity android:name=".CheckOutActivity" />
+        <activity android:name=".CellPhoneActivity" />
+        <activity android:name=".LaptopActivity"></activity>
     </application>
 
 </manifest>

@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/desktop"
-        android:title="@string/desktop">
+        android:id="@+id/phone"
+        android:title="@string/phone">
 
     </item>
-    <item
-        android:id="@+id/iphone"
-        android:title="@string/iphone">
 
-    </item>
     <item
         android:id="@+id/laptop"
         android:title="@string/laptops">
-
-    </item>
-
-    <item
-        android:id="@+id/samsung"
-        android:title="@string/samsung">
-
-    </item>
-    <item
-        android:id="@+id/tablets"
-        android:title="@string/tablets">
 
     </item>
     <item
@@ -31,5 +16,17 @@
         android:title="@string/tv">
 
     </item>
+    <item
+        android:id="@+id/printer"
+        android:title="@string/printer"
+        >
+
+    </item>
+    <item
+        android:id="@+id/accessories"
+        android:title="@string/accessories">
+
+    </item>
+
 
 </menu>

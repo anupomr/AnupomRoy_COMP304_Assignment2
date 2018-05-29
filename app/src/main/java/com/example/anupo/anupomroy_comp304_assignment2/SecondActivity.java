@@ -40,13 +40,19 @@ public class SecondActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
-            case R.id.desktop:
+            case R.id.phone:
                 Toast.makeText(this,"Desktop is selected",Toast.LENGTH_LONG).show();
                 break;
-            case R.id.iphone:
+            case R.id.laptop:
 
                 Intent intent=new Intent(SecondActivity.this,iPhoneActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tv:
+                break;
+            case R.id.printer:
+                break;
+            case R.id.accessories:
                 break;
 
         }
