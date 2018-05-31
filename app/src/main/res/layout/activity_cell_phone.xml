@@ -5,6 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CellPhoneActivity">
+    <RadioGroup
+        android:id="@+id/radioGroupCell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/iPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iPhone"/>
+        <RadioButton
+            android:id="@+id/samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/samsung"/>
+        <RadioButton
+            android:id="@+id/blackBerry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blackBerry"/>
+        <RadioButton
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/google"/>
+        <RadioButton
+            android:id="@+id/lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg"/>
+    </RadioGroup>
 
     <Button
         android:id="@+id/btnBack"

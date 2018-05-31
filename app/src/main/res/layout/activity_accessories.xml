@@ -6,6 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".AccessoriesActivity">
 
+    <CheckBox
+        android:id="@+id/airPods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/headPhone"
+        android:text="@string/airPods" />
+
+    <CheckBox
+        android:id="@+id/earPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/headPhone"
+        android:layout_below="@+id/airPods"
+        android:text="@string/earPhones" />
+
+    <CheckBox
+        android:id="@+id/headPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/crgPad"
+        android:layout_alignStart="@+id/crgPad"
+        android:layout_marginBottom="-107dp"
+        android:text="@string/headPhones" />
+
+    <CheckBox
+        android:id="@+id/crgPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-124dp"
+        android:layout_marginTop="107dp"
+        android:layout_toStartOf="@+id/chkOut"
+        android:text="@string/pad" />
+
+    <CheckBox
+        android:id="@+id/leCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnBack"
+        android:layout_marginTop="146dp"
+        android:text="@string/LeCase" />
+
+    <CheckBox
+        android:id="@+id/siCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/leCase"
+        android:layout_marginTop="189dp"
+        android:text="@string/SiCase" />
+
+    <Button
+        android:id="@+id/chkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnNext"
+        android:layout_marginStart="124dp"
+        android:onClick="checkOut"
+        android:text="@string/btnText" />
 
     <Button
         android:id="@+id/btnBack"
@@ -20,11 +82,12 @@
 
     <Button
         android:id="@+id/btnNext"
+        style="@style/btn_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/btnBack"
-        android:layout_marginStart="134dp"
-        style="@style/btn_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="46dp"
         android:text="@string/btn_next" />
 </RelativeLayout>

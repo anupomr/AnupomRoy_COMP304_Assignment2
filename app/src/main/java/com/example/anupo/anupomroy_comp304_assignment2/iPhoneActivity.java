@@ -1,5 +1,11 @@
 package com.example.anupo.anupomroy_comp304_assignment2;
-
+/*
+ * Author:  Anupom Roy
+ * Subject: Mobile Application Development
+ * date:    May 30, 2018
+ * Professor:Vinayagathas Vaithilingam
+ * Lab:     LabAssignment 2
+ * */
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,28 +17,46 @@ import android.widget.EditText;
 public class iPhoneActivity extends AppCompatActivity {
 
     Button btnBack,btnNext;
+    CheckBox iphone7, iphone8;
+    String choice;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_i_phone);
-
+        //CheckBox
+        iphone7=(CheckBox)findViewById(R.id.iPhone7);
+        iphone8=(CheckBox)findViewById(R.id.iPhone8);
+        // For Back Button
         btnBack=(Button)findViewById(R.id.btnBack);
-        btnBack.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(iPhoneActivity.this,CellPhoneActivity.class));
             }
         });
+        //For Check Box
+
+        //For Next button
+        btnNext=(Button)findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(iPhoneActivity.this, CustomerDetails.class);
+                if (iphone7.isChecked()){choice=iphone7.getText().toString();}
+                if (iphone8.isChecked()){choice+="  ,iPhone8";}
+                intent.putExtra("choice",choice);
+                startActivity(intent);
+            }
+        });
     }
-    CheckBox checkBoxPod;
-    public void checkOut(View view){
-        //Initialize Edit text object
 
-    checkBoxPod = (CheckBox) findViewById(R.id.airPods);
+    public void checkOut(View view)
+    {
 
-    String strAirpods = checkBoxPod.getText().toString();
     Intent intent = new Intent(iPhoneActivity.this, CheckOutActivity.class);
-    intent.putExtra("device", strAirpods);
+    //intent.putExtra("device", strAirpods);
     startActivity(intent);
 
     }

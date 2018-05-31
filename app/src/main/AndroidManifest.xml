@@ -23,7 +23,12 @@
         <activity android:name=".LaptopActivity" />
         <activity android:name=".TelevisionsActivity" />
         <activity android:name=".PrintersActivity" />
-        <activity android:name=".AccessoriesActivity"></activity>
+        <activity android:name=".AccessoriesActivity" />
+        <activity android:name=".SamsungActivity" />
+        <activity android:name=".BlackBerryActivity" />
+        <activity android:name=".GoogleActivity" />
+        <activity android:name=".LgActivity" />
+        <activity android:name=".CustomerDetails"></activity>
     </application>
 
 </manifest>

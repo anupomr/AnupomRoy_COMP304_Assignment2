@@ -22,7 +22,22 @@
     <string name="btnText">Check Out</string>
 
     <!--String for Cellphone Activity-->
+    <string name="iPhone">iPhone</string>
+    <string name="samsung">Samsung Phone</string>
+    <string name="blackBerry">Black Berry</string>
+    <string name="google">Google Phone</string>
+    <string name="lg">LG Phone</string>
     <string name="btn_next">Next</string>
-    <string name="btn_back">Back</string>
+    <string name="btn_back">Back</string>    
     <!--String for Cellphone Activity-->
+    
+    
+    <!--String for Customer Activity-->
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="creditCardNumber">Credit Card Number</string>
+
+    <string name="phoneNo">Phone Number</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
 </resources>
