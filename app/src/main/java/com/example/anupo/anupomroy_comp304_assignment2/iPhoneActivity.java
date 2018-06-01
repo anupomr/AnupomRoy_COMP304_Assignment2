@@ -17,7 +17,7 @@ import android.widget.EditText;
 public class iPhoneActivity extends AppCompatActivity {
 
     Button btnBack,btnNext;
-    CheckBox iphone7, iphone8;
+    CheckBox iphone6, iphone7, iphone8,iphone9;
     String choice;
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,8 +25,10 @@ public class iPhoneActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_i_phone);
         //CheckBox
+        iphone6=(CheckBox)findViewById(R.id.iPhone6);
         iphone7=(CheckBox)findViewById(R.id.iPhone7);
         iphone8=(CheckBox)findViewById(R.id.iPhone8);
+        iphone9=(CheckBox)findViewById(R.id.iPhone9);
         // For Back Button
         btnBack=(Button)findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener()
@@ -44,20 +46,15 @@ public class iPhoneActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(iPhoneActivity.this, CustomerDetails.class);
-                if (iphone7.isChecked()){choice=iphone7.getText().toString();}
-                if (iphone8.isChecked()){choice+="  ,iPhone8";}
+                if (iphone6.isChecked()){choice=iphone6.getText().toString();}
+                if (iphone7.isChecked()){choice+="\n"+iphone7.getText().toString();}
+                if (iphone8.isChecked()){choice+=iphone8.getText().toString();}
+                if (iphone9.isChecked()){choice+=iphone9.getText().toString();}
                 intent.putExtra("choice",choice);
                 startActivity(intent);
             }
         });
     }
 
-    public void checkOut(View view)
-    {
 
-    Intent intent = new Intent(iPhoneActivity.this, CheckOutActivity.class);
-    //intent.putExtra("device", strAirpods);
-    startActivity(intent);
-
-    }
 }

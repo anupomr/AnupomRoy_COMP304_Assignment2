@@ -28,12 +28,7 @@
         android:layout_height="wrap_content"
         android:text="iPhone9"/>
 
-    <Button
-        android:id="@+id/chkOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="checkOut"
-        android:text="@string/btnText" />
+
 
     <RelativeLayout
         android:layout_width="wrap_content"

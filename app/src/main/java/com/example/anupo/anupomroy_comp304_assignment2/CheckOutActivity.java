@@ -24,6 +24,6 @@ public class CheckOutActivity extends AppCompatActivity {
         String resultString=" \nYour order :"+getIntent().getStringExtra("choice");
 
         TextView textView=(TextView)findViewById(R.id.result);
-        textView.setText(nameString+addressString+resultString+"\n Order will take three business day to deliver");
+        textView.setText(nameString+"\n"+addressString+"\n"+resultString+"\n Order will take three business day to deliver");
     }
 }

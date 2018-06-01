@@ -7,15 +7,20 @@ package com.example.anupo.anupomroy_comp304_assignment2;
  * Lab:     LabAssignment 2
  * */
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import javax.xml.validation.Validator;
+
 public class CustomerDetails extends AppCompatActivity
 {
 public EditText txtName,txtAddress;
+AlertDialog.Builder builder;
+
 String name,address;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +41,14 @@ String name,address;
     {
 
         Intent intent = new Intent(CustomerDetails.this, CheckOutActivity.class);
-        name= txtName.getText().toString();
+        //builder=new AlertDialog.Builder(getActivity());
+
+        if (txtName.getText().toString().isEmpty())
+        {
+            txtName.setError("valid name required");
+            return;
+        }
+        else {name= txtName.getText().toString();}
         address=txtAddress.getText().toString();
         //assigning key to reference to the use input with putExtra
         intent.putExtra("Name",name);
